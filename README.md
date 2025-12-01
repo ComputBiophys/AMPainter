@@ -65,4 +65,16 @@ python ./fitness/reinforce.py
 ```
 
 ## Citation
-To be updated
+```
+@article{Dong2025AMPainter,
+  author = {Dong, Ruihan and Cao, Qiushi and Song, Chen},
+  title = {Painting Peptides With Antimicrobial Potency Through Deep Reinforcement Learning},
+  journal = {Advanced Science},
+  volume = {12},
+  number = {43},
+  pages = {e06332},
+  keywords = {antimicrobial peptide, deep reinforcement learning, directed evolution, sequence design},
+  doi = {https://doi.org/10.1002/advs.202506332},
+  year = {2025}
+}
+```
