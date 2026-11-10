@@ -37,6 +37,7 @@ Length of a input peptide sequence should be less than 40.
 The output of a input sequence is the transformed score based on its logMIC value to represent its antimicrobial activity.
 
 ### 2) Fine-tune Ankh
+The fine-tuned weights can be downloaded [here](https://drive.google.com/file/d/1lMVg-ahxjpfSgIDsqfpHADht007vTj13/view?usp=sharing).
 #### Data processing
 (This step can be skipped for using `./data/maskseq1by1_0.2.csv` directly)
 ```bash
@@ -53,7 +54,7 @@ python ./finetune/ankh_ft_noval.py
 python ./RLloop/reinforce.py
 ```
 #### Evolve input sequences
-Default params: `lr = 1e-3`, `batch_size = 128`, `n_steps = 10`, `iterations = 8`
+Default params: `lr = 1e-3`, `batch_size = 128`, `n_steps = 10`, `iterations = 8`, `agent_path = './weights/ite8_step40_Agent.ckpt'`
 ```bash
 python ./RLevolve/reinforce.py
 ```
